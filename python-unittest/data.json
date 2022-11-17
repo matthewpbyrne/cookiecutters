@@ -1,0 +1,70 @@
+{
+  "test_case": {
+    "name": "StringMethods",
+    "tests": [
+      {
+        "name": "inc",
+        "docstring": "a docstring for the inc test",
+        "comment": "a comment for the inc test",
+        "assertions": [
+          {
+            "comment": "a comment for the first assert",
+            "assertionType": "assertEqual",
+            "raw_action": "inc(2)",
+            "expected": 3
+          },
+          {
+            "comment": "a comment for the first assert",
+            "assertionType": "assertEqual",
+            "fn": "inc",
+            "args": 2,
+            "expected": 3
+          }
+        ]
+      },
+      {
+        "name": "upper",
+        "assertions": [
+          {
+            "assertionType": "assertEqual",
+            "raw_action": "foo.upper()",
+            "expected": "'FOO'"
+          }
+        ]
+      },
+      {
+        "name": "isupper",
+        "assertions": [
+          {
+            "assertionType": "assertTrue",
+            "raw_action": "FOO.upper()",
+            "expected": "'FOO TODO'"
+          },
+          {
+            "assertionType": "assertFalse",
+            "raw_action": "Foo.upper()",
+            "expected": "'FOO TODO'"
+          }
+        ]
+      },
+      {
+        "name": "split",
+        "prep_code": "s = 'hello world'",
+        "assertions": [
+          {
+            "raw_code": "self.assertEqual(s.split(), ['hello', 'world'])"
+          },
+          {
+            "assertionType": "assertEqual",
+            "raw_action": "s.split()",
+            "expected": "['hello', 'world']"
+          },
+          {
+            "comment": "check that s.split fails when the separator is not a string",
+            "raw_code": "with self.assertRaises(TypeError):\n\t\t\ts.split(2)"
+          }
+        ]
+      }
+    ]
+  }
+}

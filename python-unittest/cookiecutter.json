@@ -1,0 +1,7 @@
+{
+  "project_name": "TODO unittest",
+  "module_name": "utils", "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "author": "Matthew Byrne",
+  "port_number": "8000",
+  "python_version": "3.10" 
+}
