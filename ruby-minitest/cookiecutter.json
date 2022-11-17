@@ -1,0 +1,5 @@
+{
+  "project_name": "TODO ruby-minitest",
+  "module_name": "utils", "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "author": "Matthew Byrne"
+}
