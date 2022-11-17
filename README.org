@@ -1,0 +1,3 @@
+* Introduction
+
+A public repo with a set of cookiecutters I find myself repeatedly reaching for.
