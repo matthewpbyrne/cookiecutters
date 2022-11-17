@@ -1,0 +1,3 @@
+{% if cookiecutter.readme_ext == 'org' %}**{% else %}##{% endif %} Introduction
+
+A cookiecutter for {{ cookiecutter.short_name }} projects

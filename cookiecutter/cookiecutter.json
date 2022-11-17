@@ -1,0 +1,11 @@
+{
+  "short_name": "Some Template",
+  "template_slug": "cookiecutter-{{ cookiecutter.short_name.lower().replace(' ', '-') }}",
+  "default_new_project_name": "My New {{ cookiecutter.short_name }} project",
+  "project_directory_key": "project_slug",
+  "project_directory_expression": "{% raw %}{{ cookiecutter.{% endraw %}{{ cookiecutter.project_directory_key }}{% raw %} }}{% endraw %}",
+  "hooks_ext": ["py", "sh", "SKIP!"],
+  "src_dir": "src",
+  "tests_dir": "tests",
+  "readme_ext": ["org", "md", "SKIP!"]
+}

@@ -1,0 +1,4 @@
+{
+  "project_name": "My {{ cookiecutter.short_name }} project",
+  "{{ cookiecutter.project_directory_key }}": "{% raw %}{{ cookiecutter.project_name.lower().replace(' ', '-') }}{% endraw %}" 
+}
