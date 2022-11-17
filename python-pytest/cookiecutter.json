@@ -1,0 +1,9 @@
+{
+  "project_name": "TODO pytest",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "use_git": "yes",
+  "install_deps": "no",
+  "module_name": "utils",
+  "author": "Matthew Byrne",
+  "python_version": "3.10"
+}

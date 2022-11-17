@@ -1,0 +1,4 @@
+{
+  "{{ cookiecutter.project_slug }}/*.py": { "alternate": "tests/test_{}.py" },
+  "tests/test_*.py": { "alternate": "{{ cookiecutter.project_slug }}/{}.py" }
+}
